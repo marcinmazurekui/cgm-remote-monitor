@@ -12,3 +12,6 @@ services:
         value: Europe/Warsaw
       - key: PORT
         value: 10000
+    autoDeploy: true
+    env: node
+    healthCheckPath: /
