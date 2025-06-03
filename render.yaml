@@ -12,5 +12,3 @@ services:
         value: production
       - key: TZ
         value: Europe/Warsaw
-      - key: PORT
-        value: 3000
