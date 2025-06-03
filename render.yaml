@@ -5,6 +5,8 @@ services:
     plan: free
     buildCommand: npm install
     startCommand: node server.js
+    healthCheckPath: /
+    autoDeploy: true
     envVars:
       - key: NODE_ENV
         value: production
@@ -12,6 +14,3 @@ services:
         value: Europe/Warsaw
       - key: PORT
         value: 10000
-    autoDeploy: true
-    env: node
-    healthCheckPath: /
